@@ -8,7 +8,7 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`Dosage: ${bytesToSize(used)} / ${bytesToSize(total)}`];
+  let content = [`Usage: ${bytesToSize(used)} / ${bytesToSize(total)}`];
 
   if (resetDayLeft) {
     content.push(`Reset remaining days: ${resetDayLeft}`);
