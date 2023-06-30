@@ -1,3 +1,7 @@
+/*
+先将带有流量信息的节点订阅链接encode，用encode后的链接替换"url="后面的[机场节点链接]
+*/
+  
 let args = getArgs();
 
 (async () => {
