@@ -15,7 +15,7 @@ let args = getArgs();
   let content = [`Usage: ${bytesToSize(used)} / ${bytesToSize(total)}`];
 
   if (resetDayLeft) {
-    content.push(`Reset remaining days: ${resetDayLeft}`);
+    content.push(`Remaining days: ${resetDayLeft}`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
